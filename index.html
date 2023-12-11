@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”viewport” content="user-scalable=no" />
+    <link rel="stylesheet" href="styles.css?v=2"> <!-- Подключение внешнего CSS файла -->
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <!--<a class=phone_number href="tel:+79607445497">+7 960 744-54-97</a>-->
+            <img class=logo id="logo" src="img/logo.png"></img>
+            <img class=cart id="cart" src="img/cart.png"></img>
+            <span class=cart_amount id="cart_amount" style="display: none;"></span>
+        </div>
+    </div>
+
+    <div class=pictures_container>
+		<div>
+			<div data-href="/info/about/" class=p_c1>
+				<h1 class=h_style1>Очень вкусные и полезные торты для вас и в подарок вашим близким  </h1>
+				<h2 class=h_style2>Натуральный <br> состав </h2>
+				<div class=soc><a class=vk href="https://vk.com" target=_blank>Мы в Контакте</a>
+                    <a class=inst href="instagram.com" target=_blank>Мы в Instagram</a>
+                </div>
+                <div class="picture1">
+                    <img>
+
+                </div>
+
+			</div>
+
+		</div>
+	</div>
+
+    <div class="line_container">
+        <div class="line"></div>
+    </div>
+
+    <section class="catalog">
+        <div class="catalog_title">
+            <div><h1 class=h_style3>Каталог тортов</h1></div>
+        </div>
+
+        <div class="selector_title" id="toggleButton">
+            <div>
+                <img class=selector_title_img_filters src="img/filtres_grey.png"></img>
+                <h2 class=h_style4>Выберите категорию</h2>
+                <img class=selector_title_img_arrow src="img/arrow.png"></img>
+            </div>
+        </div>
+
+        <div class="checkboxBlock" id="checkboxBlock" style="display: none;">
+                <div class="cb_title1">
+                    <div>
+
+                        <h2 class=h_style_cb_title>Категория</h2>
+                    </div>
+                </div>
+                <div class="cb_items">
+                    <div class="cb_items_div" id="checkboxBlock">
+
+                    </div>
+                    <div class="cb_button_applay">
+                        <button id="applyButton">Применить</button>
+                    </div>
+                </div>
+        </div>
+
+        <div class="cb_found_count">
+            <h3 class="cb_found_count_value"></h3>
+        </div>
+
+        <div class="catalog-container">
+            <div class="inner">
+
+                <div class="item" data-product-id="1" style = "display: block;">
+                    <div class="image-text-container" data-product-id="1">
+                        <img src="photos/1_1.jpg" alt="cake" class="img">
+                        <p class="p-title">«Морковный» торт</p>
+                    </div>
+
+                    <div class="buttons-container-order">
+                        <!--<p class="p-price">0 руб.</p>-->
+                        <button class="btn_order btn" id="btn1" data-item-id="1">В корзину</button>
+                        <span class=product_in_cart_amount id="1" style="display: none;"></span>
+                        <img class=cartPlus src="img/cart+.png"></img>
+                    </div>
+                </div>
+
+            <div class="item" data-product-id="2" style = "display: block;">
+                    <div class="image-text-container" data-product-id="2">
+                        <img src="photos/2_1.jpg" alt="cake" class="img">
+                        <p class="p-title">«Шварцвальдский» торт</p>
+                    </div>
+
+                    <div class="buttons-container-order">
+                        <!--<p class="p-price">0 руб.</p>-->
+                        <button class="btn_order btn" id="btn2" data-item-id="2">В корзину</button>
+                        <span class=product_in_cart_amount id="2" style="display: none;"></span>
+                        <img class=cartPlus src="img/cart+.png"></img>
+                    </div>
+                </div>
+
+            <div class="item" data-product-id="3" style = "display: block;">
+                    <div class="image-text-container" data-product-id="3">
+                        <img src="photos/3_1.jpg" alt="cake" class="img">
+                        <p class="p-title">«Сникерс»</p>
+                    </div>
+
+                    <div class="buttons-container-order">
+                        <!--<p class="p-price">0 руб.</p>-->
+                        <button class="btn_order btn" id="btn3" data-item-id="3">В корзину</button>
+                        <span class=product_in_cart_amount id="3" style="display: none;"></span>
+                        <img class=cartPlus src="img/cart+.png"></img>
+                    </div>
+                </div>
+
+            <div class="item" data-product-id="4" style = "display: block;">
+                    <div class="image-text-container" data-product-id="4">
+                        <img src="photos/4_1.jpg" alt="cake" class="img">
+                        <p class="p-title">«Рафаэлло»</p>
+                    </div>
+
+                    <div class="buttons-container-order">
+                        <!--<p class="p-price">0 руб.</p>-->
+                        <button class="btn_order btn" id="btn4" data-item-id="4">В корзину</button>
+                        <span class=product_in_cart_amount id="4" style="display: none;"></span>
+                        <img class=cartPlus src="img/cart+.png"></img>
+                    </div>
+                </div>
+
+            <div class="item" data-product-id="5" style = "display: block;">
+                    <div class="image-text-container" data-product-id="5">
+                        <img src="photos/5_1.jpg" alt="cake" class="img">
+                        <p class="p-title">«Маковый» торт</p>
+                    </div>
+
+                    <div class="buttons-container-order">
+                        <!--<p class="p-price">0 руб.</p>-->
+                        <button class="btn_order btn" id="btn5" data-item-id="5">В корзину</button>
+                        <span class=product_in_cart_amount id="5" style="display: none;"></span>
+                        <img class=cartPlus src="img/cart+.png"></img>
+                    </div>
+                </div>
+
+            <div class="item" data-product-id="6" style = "display: block;">
+                    <div class="image-text-container" data-product-id="6">
+                        <img src="photos/6_1.jpg" alt="cake" class="img">
+                        <p class="p-title">Классический медовик /торт цифра </p>
+                    </div>
+
+                    <div class="buttons-container-order">
+                        <!--<p class="p-price">0 руб.</p>-->
+                        <button class="btn_order btn" id="btn6" data-item-id="6">В корзину</button>
+                        <span class=product_in_cart_amount id="6" style="display: none;"></span>
+                        <img class=cartPlus src="img/cart+.png"></img>
+                    </div>
+                </div>
+
+            <div class="item" data-product-id="7" style = "display: block;">
+                    <div class="image-text-container" data-product-id="7">
+                        <img src="photos/7_1.jpg" alt="cake" class="img">
+                        <p class="p-title">Открытый медовик /торт цифра </p>
+                    </div>
+
+                    <div class="buttons-container-order">
+                        <!--<p class="p-price">0 руб.</p>-->
+                        <button class="btn_order btn" id="btn7" data-item-id="7">В корзину</button>
+                        <span class=product_in_cart_amount id="7" style="display: none;"></span>
+                        <img class=cartPlus src="img/cart+.png"></img>
+                    </div>
+                </div>
+
+            <div class="item" data-product-id="8" style = "display: block;">
+                    <div class="image-text-container" data-product-id="8">
+                        <img src="photos/8_1.jpg" alt="cake" class="img">
+                        <p class="p-title">Молочная девочка</p>
+                    </div>
+
+                    <div class="buttons-container-order">
+                        <!--<p class="p-price">0 руб.</p>-->
+                        <button class="btn_order btn" id="btn8" data-item-id="8">В корзину</button>
+                        <span class=product_in_cart_amount id="8" style="display: none;"></span>
+                        <img class=cartPlus src="img/cart+.png"></img>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <div class="usercard" id="usercard">
+    </div>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="app.js"></script>
+    <script type="module" src="dict.js"></script>
+    <script type="module" src="script.js"></script>
+
+    <script>
+        var currentPath = window.location.pathname;
+        if (!currentPath.includes('index.html')) {
+          var newPath = currentPath + 'index.html';
+          window.location.href = newPath;
+        }
+      </script>
+
+</body>
+</html>
