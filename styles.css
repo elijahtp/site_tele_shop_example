@@ -1,8 +1,5 @@
 /* Объявление CSS переменной */
-
 :root {
-    --photo-aspect-ratio: 0.58; /* посмотреть какие размеры фото - найти пропорции */
-
     --background-color: #a39e9e;
     --header-color: #ffa8b2;
 
@@ -38,8 +35,6 @@
     --order-font-size: 16px;
     --weight-font-size: 11px;
     --order-button-font-size: 15px;
-
-
 
 
 
@@ -146,13 +141,14 @@ body {
     cursor: pointer;
 }
 
-
-
-
 .cart {
     width: 30px;
+
+
     position: absolute;
     right: 10px;
+
+
     border: none;
     z-index: 10;
     cursor: pointer;
@@ -188,9 +184,9 @@ body {
 
     position: relative;
     width: 100%;
-    top: 35px;
+    padding-top: 51px;
     max-width: 500px;
-    height: 400px;
+    height: 280px;
     border-top: 1px solid #f5f5f5;
     background-color: #f5f5f5;
 }
@@ -205,7 +201,7 @@ body {
 .h_style1 {
     width: 280px;
     position: relative;
-    top: 320px;
+    top: 18px;
     margin: 0 13px;
     padding: 3px 10px 4px 10px;
     display: inline-block;
@@ -243,7 +239,7 @@ body {
 }
 
 .soc {
-    top: 30px;
+    top: 220px;
     position: absolute;
     left: 15px;
     right: auto;
@@ -253,7 +249,7 @@ body {
 .vk {
     border: 1px solid rgba(255,255,255,.1);
     box-shadow: 0 0 12px -3px #000;
-    background-position: -363px -13px;
+    background-position: -363px -14px;
     background-image: url("img/el.png");
 
     overflow: hidden;
@@ -269,23 +265,6 @@ body {
 
 }
 
-.phone {
-    border: 1px solid rgba(255,255,255,.1);
-    box-shadow: 0 0 12px -3px #000;
-    background-position: -463px -64px;
-    background-image: url("img/el.png");
-
-    overflow: hidden;
-    width: 23px;
-    height: 23px;
-    margin: 0 10px 1px 0;
-    border-radius: 15px;
-    text-indent: -500px;
-    display: inline-block;
-    transition: none;
-
-}
-/*
 .inst {
     border: 1px solid rgba(255,255,255,.1);
     box-shadow: 0 0 12px -3px #000;
@@ -300,8 +279,9 @@ body {
     text-indent: -500px;
     display: inline-block;
     transition: none;
+
+
 }
-*/
 
 .picture1 {
     position: absolute;
@@ -317,11 +297,11 @@ body {
 
 .picture1 img {
 
-    background-size: 110%;
+    background-size: 190%;
     width: 100%;
     height: 100%;
-    background-image: url("img/picture_main.jpg") ;
-    background-position: -0px -0px;
+    background-image: url("img/picture1.jpg") ;
+    background-position: -113px -0px;
 
     transition: all .5s ease-out;
 
@@ -668,7 +648,20 @@ body {
 
 }
 
+.buttons-back {
 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    transition: background .2s linear;
+    margin-left: 2px;
+
+    /*text-transform: uppercase;*/
+    text-align: center;
+
+}
 
 
 
@@ -853,6 +846,10 @@ body {
     width: 92%;
     margin-left: 4%;
 
+
+
+
+
      /*overflow-x: auto;*/
 
     overflow: hidden;
@@ -871,21 +868,11 @@ body {
     margin-right: 10px;*/
 
     max-width: 100%;
-    max-height: 100%;
-
+    aspect-ratio: 0.9;
     display: block;
     transition: transform 0.3s ease;
-    object-fit: contain;
 
 }
-
-
-
-
-
-
-
-
 
 .container-carousel-btns{
 
@@ -988,13 +975,16 @@ body {
 }
 
 .p-title-carousel {
-    width: 92%;
+
     color: var(--font-color-dark);
     font-size: var(--title-font-size);
     padding-top: 0px;
-    white-space: pre-wrap;
+    word-wrap: break-word;
+
 
 }
+
+
 
 .outer-buttons-container-order {
     width: 100%;
@@ -1103,8 +1093,8 @@ body {
     /*display: flex;*/
     flex-direction: column; /* Элементы располагаются вертикально */
     align-items: center; /* Центрируем элементы по вертикали */
-    width: 96%;
-    aspect-ratio: 0.85;
+    /*width: 96%;*/
+    aspect-ratio: 0.78;
 
     /*height: 280px;*/
     cursor: pointer;
@@ -1116,32 +1106,14 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Добавляем тень при наведении */
 
 }
-
-
-.img-container {
+.img {
     position: relative;
     left: 5%;
     width: 90%;
-    height: 231px;
+    aspect-ratio: 0.9;
 
     border: 1px solid var(--border-color) ;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
 }
-
-.img-container img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-
-
-
-
 
 /* Стили для абзаца с текстом */
 .image-text-container p {
@@ -1160,7 +1132,7 @@ body {
 .p-title {
     position: relative;
     left: 5%;
-
+    width: 90%;
     min-height: 50px;
     color: var(--font-color-dark);
     font-size: var(--title-font-size);
@@ -1326,6 +1298,12 @@ var(--tg-theme-button-text-color)
 */
 
 
+
+
+
+
+
+
 .btn_back {
     position: absolute;
 
@@ -1454,7 +1432,7 @@ var(--tg-theme-button-text-color)
 .cartContainer>div:nth-child(1)>img{
 
     width: 17%;
-    aspect-ratio: var(--photo-aspect-ratio);
+    aspect-ratio: 0.9;
 
     top: 10px;
 
@@ -1642,7 +1620,7 @@ color: #999;
     top: 0px;
 
 
-    height: 20px;
+    height: 33px;
 
     align-items:center; /* Центрируем элементы по вертикали */
 
@@ -1651,7 +1629,7 @@ color: #999;
 }
 .price-amount-total div{
     width: 100%;
-    margin-left: 10px;
+    margin-left: 2%;
 
     display: flex;
     /*justify-content: center;*/
@@ -1684,22 +1662,26 @@ color: #999;
     cursor: pointer;
 }
 
-  .price-amount-total>div>h2:nth-child(1) {
-    width:90px;
-    text-align: left;
+
+
+.price-amount-total>div>img:nth-child(1) {
+
+    width:20px;
+
+
   }
 
   .price-amount-total>div>h2:nth-child(2) {
-    width:90px;
-    text-align: left;
-  }
+    width:5%;
 
-  .price-amount-total>div>img {
+
+  }
+  .price-amount-total>div>img:nth-child(3) {
     width:20px;
   }
-  .price-amount-total>div>h2:nth-child(3) {
-    width:30px;
-    text-align: center;
+  .price-amount-total>div>h2:nth-child(4) {
+    width:35%;
+    text-align: right;
   }
   .price-amount-total>div>h2:nth-child(5) {
     margin-left: 3%;
@@ -1712,56 +1694,6 @@ color: #999;
   }
 
 
-
-
-
-
-
-  .price-amount-total_1{
-
-    display: inline-block;
-
-
-    position: relative;
-    width: 100%;
-    top: 0px;
-
-
-    height: 30px;
-
-    align-items:center; /* Центрируем элементы по вертикали */
-
-
-
-}
-.price-amount-total_1 div{
-    width: 100%;
-    margin-left: 10px;
-
-    display: flex;
-    /*justify-content: center;*/
-    align-items: center;
-    text-align: center;
-
-    z-index: 11;
-}
-
-
-  .price-amount-total_1>div>h2:nth-child(1) {
-    width:80%;
-    text-align: left;
-  }
-
-  .price-amount-total_1>div>img:nth-child(2) {
-    height: 20px;
-    margin-top: 0px;
-    text-align: left;
-
-
-    border: none;
-    z-index: 10;
-    cursor: pointer;
-  }
 
 
   .select-options{
@@ -1926,8 +1858,6 @@ color: #999;
 
 #makeOrderButton {
     z-index: 9;
-    height: 40px;
-    margin-bottom: 20px;
 
 }
 
@@ -1951,12 +1881,10 @@ color: #999;
     top: 5px;
     left: 4%;
     width: 92%;
-    height: 100%;
     display: flex;
     justify-content: center;
 
     text-align: center;
-    align-items: center;
 
     border: none;
 
